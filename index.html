@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasiya Max AI OS v2.0</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .link-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>🤖 Pasiya Max</h2>
+                <p>AI OS v2.0</p>
+            </div>
+            <ul>
+                <li onclick="navigate('home')"><i class="fas fa-home"></i> මුල් පිටුව</li>
+                <li onclick="navigate('ai')"><i class="fas fa-robot"></i> AI උපකරණ</li>
+                <li onclick="navigate('blog')"><i class="fas fa-blog"></i> බ්ලොග් කළමනාකරු</li>
+                <li onclick="navigate('social')"><i class="fas fa-share-alt"></i> සමාජ මාධ්‍ය</li>
+                <li onclick="navigate('links')"><i class="fas fa-link"></i> My Links</li>
+                <li onclick="navigate('analytics')"><i class="fas fa-chart-bar"></i> විශ්ලේෂණ</li>
+                <li onclick="navigate('scheduler')"><i class="fas fa-calendar"></i> කාලසටහන්කරු</li>
+                <li onclick="navigate('settings')"><i class="fas fa-cog"></i> සැකසුම්</li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="search-bar">
+                    <input type="text" placeholder="සොයන්න...">
+                </div>
+                <div class="user-info">
+                    <span id="user-name">Pasindu Dananjaya</span>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </header>
+
+            <div id="content-area">
+                <!-- Dynamic content loads here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

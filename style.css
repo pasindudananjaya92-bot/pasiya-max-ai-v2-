@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    overflow: hidden;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #111;
+    padding: 20px 0;
+    border-right: 1px solid #333;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.logo h2 {
+    color: #00ffcc;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar li {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar li:hover {
+    background: #1a1a1a;
+    color: #00ffcc;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.topbar {
+    background: #1a1a1a;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.search-bar input {
+    padding: 10px 20px;
+    width: 350px;
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
